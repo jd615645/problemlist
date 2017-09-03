@@ -1,0 +1,28 @@
+extends layout
+block css
+  link(rel='stylesheet', type='text/css', href='/styles/main.css')
+block content
+  #app.todo-list
+    h1.title 問題回報
+    .items
+      .bug
+        h2.item-title 已知問題
+        ul.bug-list
+          li(v-for='list in bugLists')
+            i.fa.fa-circle-o(aria-hidden='true')
+            | {{ list }}
+      .done
+        h2.item-title 已解決
+        ul.done-list
+          li(v-for='list in doneLists')
+            i.fa.fa-check-circle(aria-hidden='true')
+            | {{ list }}
+    .contant
+      p 使用上有任何問題及建議，歡迎回報至粉專
+      p 若發現BUG建議可以附圖回報，我會比較了解狀況呦
+      p.fb
+        i.fa.fa-facebook-official.fa-fw(aria-hidden='true')
+        a(href='https://fb.me/hsingassistant/', target='_blank') 興大助手
+
+block append js
+  script(src='/js/main.js')

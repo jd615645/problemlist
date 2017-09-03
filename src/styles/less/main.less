@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  
+  font-family: 'Roboto', '黑體-繁', 'Microsoft JhengHei', sans-serif;
+  color: #435757;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+}
+.todo-list {
+  width: 450px;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+.title {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  border-top: 5px solid #435757;
+  font-size: 1.8em;
+  text-align: center;
+}
+.items {
+  padding-top: 20px;
+}
+.item-title {
+  position: relative;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  font-size: 1.4em;
+  
+  border-left: 3px solid #435757;
+}
+.bug-list, .done-list {
+  padding: 0px 15px;
+  list-style-type: none;
+  li {
+    padding: 10px 5px;
+    border-top: 1px dashed #fff;
+    font-size: 1.3em;
+    i { margin-right: 5px; }
+    &:hover {
+      background-color: rgba(255, 255, 255, .2);
+    }
+  }
+}
+.contant {
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .4);
+  text-align: center;
+  p {
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+  .fb {
+    margin: 0px;
+    i { margin-right: 5px; }
+    a {
+      // text-decoration: none;
+      color: #435757;
+    }
+  }
+}
